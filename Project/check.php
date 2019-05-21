@@ -14,6 +14,8 @@
               <option  value = "-">-</option>
               <option  value = "*">*</option>
               <option  value = "/">/</option>
+              <option  value = "^">^</option>
+              <option  value = "root">root</option>
               </select>
       <input type="number" name="number_2" value="">
       <input type="submit" name="" value="Okey">

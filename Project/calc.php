@@ -29,6 +29,12 @@ switch ($calculator['sign']) {
         case '/':
           $answer = $calculator['firstValue'] / $calculator['secondValue'];
           break;
+          case '^':
+            $answer = $calculator['firstValue'] ** $calculator['secondValue'];
+            break;
+            case 'root':
+              $answer = $calculator['firstValue'] ** (0.5 ** $calculator['secondValue']);
+              break;
   default:
   $answer = 'Мы еще не готовы к этому ';
     break;
