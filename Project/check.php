@@ -8,9 +8,14 @@
   </head>
   <body>
     <form class="calc"  action="check.php" method="post">
-      <input type="number" name="number_1" value="0">
-      <input type="text" name="sign" value="">
-      <input type="number" name="number_2" value="0">
+      <input type="number" name="number_1" value="">
+      <select class="" name="sign">
+              <option  value = "+">+</option>
+              <option  value = "-">-</option>
+              <option  value = "*">*</option>
+              <option  value = "/">/</option>
+              </select>
+      <input type="number" name="number_2" value="">
       <input type="submit" name="" value="Okey">
     </form>
     <div class="answer"><?php echo $answer ;?>
