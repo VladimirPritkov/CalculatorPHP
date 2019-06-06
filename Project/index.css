@@ -5,6 +5,9 @@ form{
 input{
   text-align: center;
 }
+table{
+  margin: 10px auto;
+}
 .answer{
   min-width: 100px;
   max-width: 300px;
@@ -16,4 +19,15 @@ input{
   border-radius: 5px;
   text-align: center;
 
+}
+.answers{
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 30px;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 10px auto;
+  border: 1px green solid;
+  border-radius: 5px;
+  text-align: center;
 }

@@ -1,3 +1,4 @@
+<?php session_start()?>
 <?php include 'calc.php';  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
+    <?php echo $errorMessage?>
     <form class="calc"  action="index.php" method="post">
       <input type="number" name="firstValue" value="<?php echo $calcData['firstValue'] ?>">
       <select class="" name="symbol">
@@ -26,7 +28,15 @@
       <input type="submit" name="" value="Okey">
     </form>
 
-    <div class="answer"><?php echo $answer; ?></div>
-    <div class="answer"><?php echo $saveAnswer; ?></div>
+    <div class="answer"><?php echo $answer ;?></div>
+    <?php if(!empty($_SESSION['answers'])): ?>
+    <?php foreach ($_SESSION['answers'] as $key => $value):?>
+     <table>
+       <tr>
+         <td class="answers">  <?php echo $value ?> </td>
+       </tr>
+     </table>
+   <?php endforeach; ?>
+ <?php endif;?>
   </body>
 </html>

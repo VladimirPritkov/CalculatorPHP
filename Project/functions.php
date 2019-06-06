@@ -52,3 +52,8 @@ function squareRoot($a, $b) {
 function saveAnswer($a,$b,$c,$d){
 return "$a $b $c = $d";
 }
+function addAnswerToSession( $saveAnswer){
+  if( $saveAnswer != null){
+    $_SESSION['answers'][] = $saveAnswer;
+  }
+}
